@@ -1,2 +1,3 @@
 GET        /              @controllers.Main.index
 GET        /events        @controllers.Main.events(from: String)
+POST /push @controllers.Main.push(to: String)
