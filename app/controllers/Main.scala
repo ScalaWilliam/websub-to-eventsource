@@ -14,6 +14,7 @@ import play.api.libs.iteratee.Concurrent
 import play.api.libs.iteratee.streams.IterateeStreams
 import play.api.libs.ws.WSClient
 import play.api.mvc.{InjectedController, Request}
+import play.twirl.api.Html
 
 import scala.async.Async._
 import scala.concurrent.ExecutionContext
@@ -30,7 +31,11 @@ class Main @Inject()(ws: WSClient)(implicit executionContext: ExecutionContext)
   private val source =
     Source.fromPublisher(IterateeStreams.enumeratorToPublisher(broadcaster))
 
-  def index = TODO
+  def index = Action {
+    Ok(Html("""<body>
+    <p><a href="https://github.com/scalawilliam/websub-to-eventsource">See GitHub</a>.</p>
+    </body>"""))
+  }
 
   def push(to: String) = Action {
     pushHere.push(to)
