@@ -9,7 +9,7 @@
 - https://devcenter.heroku.com/articles/heroku-postgresql
 - https://switchboard.p3k.io/
 - https://www.w3.org/TR/websub/
-- https://indieweb.org/how-to-push#Receiving_notifications_of_new_content
+- https://indieweb.org/how-to-push
 - https://www.playframework.com/documentation/2.6.x/WSMigration26
 - https://www.playframework.com/documentation/2.6.x/StreamsMigration25#Migrating-Enumerators-to-Sources
 - https://en.wikipedia.org/wiki/WebSub

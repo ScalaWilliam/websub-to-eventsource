@@ -1,3 +1,4 @@
 GET        /              @controllers.Main.index
 GET        /events        @controllers.Main.events(from: String)
+GET /push @controllers.Main.pushConfirm(to: String)
 POST /push @controllers.Main.push(to: String)
